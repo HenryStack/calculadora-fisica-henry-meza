@@ -41,3 +41,9 @@ Este proyecto es una calculadora interactiva que permite realizar cálculos de 1
 - HTML
 - CSS3
 - JavaScript
+  
+-  `index.html`: Contiene la estructura de la calculadora.
+- `style.css`: Estilos visuales y diseño.
+- `script.js`: Lógica de cálculo y validaciones.
+- `README.md`: Este documento explicativo.
+
