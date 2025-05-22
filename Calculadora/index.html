@@ -1,0 +1,100 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Magnitudes Físicas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Calculadora de Magnitudes Físicas</h1>
+    <p>Nombre del estudiante: <strong>Tu Nombre Completo</strong></p>
+  </header>
+
+  <main>
+    <section class="caja">
+      <h2>Velocidad (v = d / t)</h2>
+      <input type="number" id="d" placeholder="Distancia (m)">
+      <input type="number" id="t" placeholder="Tiempo (s)">
+      <button onclick="calcularVelocidad()">Calcular</button>
+      <p id="resultadoVelocidad"></p>
+    </section>
+
+    <section class="caja">
+      <h2>Aceleración (a = Δv / Δt)</h2>
+      <input type="number" id="dv" placeholder="Cambio de velocidad (m/s)">
+      <input type="number" id="dt" placeholder="Tiempo (s)">
+      <button onclick="calcularAceleracion()">Calcular</button>
+      <p id="resultadoAceleracion"></p>
+    </section>
+
+    <section class="caja">
+      <h2>Fuerza (F = m · a)</h2>
+      <input type="number" id="m1" placeholder="Masa (kg)">
+      <input type="number" id="a1" placeholder="Aceleración (m/s²)">
+      <button onclick="calcularFuerza()">Calcular</button>
+      <p id="resultadoFuerza"></p>
+    </section>
+
+    <section class="caja">
+      <h2>Trabajo (W = F · d · cos(θ))</h2>
+      <input type="number" id="f2" placeholder="Fuerza (N)">
+      <input type="number" id="d2" placeholder="Distancia (m)">
+      <input type="number" id="theta" placeholder="Ángulo (°)">
+      <button onclick="calcularTrabajo()">Calcular</button>
+      <p id="resultadoTrabajo"></p>
+    </section>
+
+    <section class="caja">
+      <h2>Energía Cinética (K = ½ · m · v²)</h2>
+      <input type="number" id="m3" placeholder="Masa (kg)">
+      <input type="number" id="v3" placeholder="Velocidad (m/s)">
+      <button onclick="calcularEnergiaCinetica()">Calcular</button>
+      <p id="resultadoEnergiaCinetica"></p>
+    </section>
+
+    <section class="caja">
+      <h2>Energía Potencial Gravitatoria (U = m · g · h)</h2>
+      <input type="number" id="m4" placeholder="Masa (kg)">
+      <input type="number" id="h4" placeholder="Altura (m)">
+      <button onclick="calcularEnergiaPotencial()">Calcular</button>
+      <p id="resultadoEnergiaPotencial"></p>
+    </section>
+
+    <section class="caja">
+      <h2>Densidad (ρ = m / V)</h2>
+      <input type="number" id="m5" placeholder="Masa (kg)">
+      <input type="number" id="v5" placeholder="Volumen (m³)">
+      <button onclick="calcularDensidad()">Calcular</button>
+      <p id="resultadoDensidad"></p>
+    </section>
+
+    <section class="caja">
+      <h2>Presión (P = F / A)</h2>
+      <input type="number" id="f6" placeholder="Fuerza (N)">
+      <input type="number" id="a6" placeholder="Área (m²)">
+      <button onclick="calcularPresion()">Calcular</button>
+      <p id="resultadoPresion"></p>
+    </section>
+
+    <section class="caja">
+      <h2>Carga Eléctrica (q = I · t)</h2>
+      <input type="number" id="i9" placeholder="Corriente (A)">
+      <input type="number" id="t9" placeholder="Tiempo (s)">
+      <button onclick="calcularCarga()">Calcular</button>
+      <p id="resultadoCarga"></p>
+    </section>
+
+    <section class="caja">
+      <h2>Ley de Ohm (V = I · R)</h2>
+      <input type="number" id="i10" placeholder="Corriente (A)">
+      <input type="number" id="r10" placeholder="Resistencia (Ω)">
+      <button onclick="calcularVoltaje()">Calcular</button>
+      <p id="resultadoVoltaje"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
